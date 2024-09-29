@@ -112,6 +112,6 @@ def scan_document(image_path):
     print('made it here') 
 
 # Usage
-image_path = './form_templates/formi9.jpg'
+image_path = './form_templates/image.png'
 text_from_document = scan_document(image_path)
 print(text_from_document)
