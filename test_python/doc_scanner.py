@@ -7,7 +7,6 @@ pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tessera
 def highlight_text_in_image():
     # Initialize the webcam
     cap = cv2.VideoCapture(0)
-    
     if not cap.isOpened():
         print("Error: Could not open webcam.")
         return None
@@ -42,7 +41,7 @@ def highlight_text_in_image():
             print(extracted_text)
             
             # Save the captured image
-            cv2.imwrite('captured_image.png', frame)
+            cv2.imwrite('../images/captured_image.png', frame)
             print("Image captured and saved as 'captured_image.png'.")
         elif key == ord('q'):
             break
